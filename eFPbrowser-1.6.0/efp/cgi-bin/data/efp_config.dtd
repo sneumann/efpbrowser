@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT specimen (view+)>
+<!ELEMENT view (coords,extra*,group+)>
+<!ELEMENT coords EMPTY>
+<!ELEMENT extra EMPTY>
+<!ELEMENT group (link?, control*,tissue+)>
+<!ELEMENT link EMPTY>
+<!ELEMENT control EMPTY>
+<!ELEMENT tissue (link?, area*, sample+)>
+<!ELEMENT area EMPTY>
+<!ELEMENT sample EMPTY>
+
+<!ATTLIST specimen name CDATA #REQUIRED>
+<!ATTLIST view name CDATA #REQUIRED>
+<!ATTLIST view db CDATA #REQUIRED>
+<!ATTLIST view img CDATA #REQUIRED>
+<!ATTLIST view class CDATA #IMPLIED>
+<!ATTLIST view dbGroup CDATA #REQUIRED>
+<!ATTLIST coords graphX CDATA #REQUIRED>
+<!ATTLIST coords graphY CDATA #REQUIRED>
+<!ATTLIST coords graphWidth CDATA #REQUIRED>
+<!ATTLIST coords graphHeight CDATA #REQUIRED>
+<!ATTLIST coords legendX CDATA #REQUIRED>
+<!ATTLIST coords legendY CDATA #REQUIRED>
+<!ATTLIST extra name CDATA #REQUIRED>
+<!ATTLIST extra link CDATA #REQUIRED>
+<!ATTLIST extra parameters (No|Yes) #REQUIRED>
+<!ATTLIST extra coords CDATA #REQUIRED>
+<!ATTLIST extra check CDATA #IMPLIED>
+<!ATTLIST extra checkColumn CDATA #IMPLIED>
+<!ATTLIST group name CDATA #REQUIRED>
+<!ATTLIST link url CDATA #REQUIRED>
+<!ATTLIST control sample CDATA #REQUIRED>
+<!ATTLIST tissue colorKey CDATA #REQUIRED>
+<!ATTLIST tissue name CDATA #REQUIRED>
+<!ATTLIST area coords CDATA #REQUIRED>
+<!ATTLIST sample name CDATA #REQUIRED>

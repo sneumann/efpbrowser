@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT info (service+)>
+<!ELEMENT service (connect , icon, link?, (result_regex|noresult_regex))>
+<!ATTLIST service name CDATA #REQUIRED>
+<!ATTLIST service type CDATA #REQUIRED>
+
+<!ELEMENT connect EMPTY>
+<!ATTLIST connect url CDATA #REQUIRED>
+<!ELEMENT link EMPTY>
+<!ATTLIST link url CDATA #REQUIRED>
+<!ELEMENT icon EMPTY>
+<!ATTLIST icon filename CDATA #REQUIRED>
+<!ELEMENT result_regex EMPTY>
+<!ATTLIST result_regex pattern CDATA #REQUIRED>
+<!ELEMENT noresult_regex EMPTY>
+<!ATTLIST noresult_regex pattern CDATA #REQUIRED>
+<!ELEMENT external EMPTY>
+<!ATTLIST external webservice CDATA #REQUIRED>
+

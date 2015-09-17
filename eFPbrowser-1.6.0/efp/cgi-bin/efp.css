@@ -1,0 +1,56 @@
+li.error {
+   color: #FF0000;
+}
+
+body {
+   font-family: arial, helvetica, verdana;
+   font-size: 10pt;
+}
+
+th, input {
+  font-size: 9pt;
+}
+
+h1 {
+  font-size: 12pt;
+  line-height: 12pt;
+  color: #999999;
+}
+
+p {
+   font-size: 9pt;
+}
+
+li {
+   font-size: 9pt;
+}
+
+
+/* container for closelink */
+.closewin_text {
+	float:right;
+	padding:5px;
+}
+.closewin_text a{
+	text-decoration:underline;
+	font-size:small;
+}
+.closewin_text a:hover{
+}
+
+/* container for content */
+.chart{
+	padding:10px;
+	height: 92%;
+	overflow:auto;
+}
+.popup {
+	border:thin solid #000000;
+	margin:auto;
+	padding: 5px;
+	z-index:100;
+	left:0;
+	right:0;
+	position:absolute;
+}
+

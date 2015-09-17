@@ -1,0 +1,47 @@
+.trigger{
+	cursor:pointer;
+}
+.trigger:hover{
+	cursor:pointer;
+}
+.expanded{
+	background:#AEAEAE;
+	cursor:pointer;
+	color: white; 		/* Text colour */
+	font-weight:bold;
+}
+.expanded:hover{
+	cursor:pointer;
+}
+
+.show{
+    position:static;
+    display: table;
+}
+.hide{
+	position:absolute;
+	left:-999em;
+	height:1px;
+	width:100px;
+	overflow:hidden;
+}
+
+
+/* Make the collapseable div's look nicer and puts them closer together */
+
+img {
+	border: none;
+}
+
+p.trigger, p.expanded {
+	font-family: Helvetica, Arial;
+	font-size: 10pt;
+	padding: 1px;
+	margin: -1px;	/* A negative margin pulls the rows together so the borders don't overlap to appear thicker */
+	border-bottom-style: solid;
+	border-bottom-color: #AEAEAE; 
+	border-bottom-width: 0.5px;
+	border-top-style: solid;
+	border-top-color: #AEAEAE; 
+	border-top-width: 0.5px;
+}	

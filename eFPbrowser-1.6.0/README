@@ -1,0 +1,289 @@
+The eFP Browser
+Release 1.1.5 (February 21, 2011)
+
+==============================================================================
+The eFP Browser 1.1.5
+==============================================================================
+
+Contents
+--------
+
++ Introduction
++ Setup instructions
++ Sample data
++ Troubleshooting
+
+--------------------------------------------------------------------
+Introduction
+--------------------------------------------------------------------
+
+The electronic Fluorescent Pictograph (eFP) Browser tool paints gene 
+expression information from one of the AtGenExpress data sets or other 
+compendia for your desired gene onto a diagrammatic representation of 
+Arabidopsis thaliana or poplar plants. 
+
+It was programmed by Ben Vinegar and Debbie Winter, published in 
+Winter et al., 2007, PLoS ONE 2(8):e718. Subsequent views and species
+were added by Justin Foong and Hardeep Nahal (Bassel et al., 2008, 
+plant Physiol. 147:143-155 and Wilkins et al., 2008, Plant Physiol. 149:981-993). 
+Please cite any or all of these papers if you use images in talks 
+or to guide your research. 
+
+For a given gene, you can examine its expression in three different 
+modes. You can
+
+- view its Absolute expression level in the tissues displayed,
+- view its expression level Relative to its control value, which is 
+  useful for seeing where the gene is most prominently expressed, or
+-  Compare its relative expression level to that of another gene 
+  (the Secondary AGI), which is useful for identifying tissues where 
+  the reference gene (Secondary AGI) is potentially non-redundant 
+  relative to the other. You could also use some "constitutively 
+  expressed" gene, such as alpha-tubulin, as the reference gene.
+
+In the case of the Developmental and Seed series, for any given gene 
+we calculate the median for all of the values displayed on the 
+particular eFP Browser view and use that as the control value for 
+calculating the relative level. The control values for the other 
+series are either the zero time point, or the appropriate non-treated 
+time point samples.
+
+In all cases, the default Signal Threshold for the colour-scale is the 
+maximum for the Mode in question. That is, if the maximum absolute 
+expression level is, say, 1867 for your gene of interest, that will 
+be indicated by red in the default setting. If not, you will be alerted 
+to the fact that the threshold changes as you change views. 
+However, if you wish to compare different genes, it is useful to use a 
+specified Signal Threshold, of say 1000, for all genes you are examining. 
+In this case anything coloured red in the image is expressed at 1000 or 
+higher. You will also be alerted if the standard deviations in some 
+samples are high, or if the expression values are low, which might 
+affect the ratio calculations.
+
+The detailed expression values can be shown as table and chart. 
+Additionally you can configure requests on external web services and show 
+active links to web resource depending on the result (e. g. check 
+subcellular localization).
+With the current release of the software you can also check orthologs with 
+other species. These are shown in collapsible tables with links to their efp
+browser.
+
+The software package is written in Python and is platform independent.
+It uses an extended version of The Python Image Library, which source
+kit is included (see REAMDE file in the subdirectroy Imaging1.1.6efp)
+
+The main distribution site for this software is:
+
+        http://efpbrowser.sourceforge.net
+
+That site also contains information about free and commercial support
+options, PIL add-ons, answers to frequently asked questions, and more.
+
+
+Different running variations of this tool are accessible under
+
+	http://bar.utoronto.ca
+
+The partner paper to this application can be found here:
+
+	http://dx.doi.org/10.1371/journal.pone.0000718
+
+
+The software is provided under GNU Public License.
+Please cite any or all of the papers named above if you use images in 
+talks or to guide your research. 
+
+--------------------------------------------------------------------
+Build instructions
+--------------------------------------------------------------------
+
+1. Prerequisites.
+
+The eFP Browser uses several software packages, which are provided on 
+the named web pages. Some LINUX distributions include (some of) these
+packages already, so you just have to install them.
+
+- Python interpreter, at least version 2.3
+  Available at http://www.python.org
+
+- PyXML (Python library for XML handling)
+  Available at http://pyxml.sourceforge.net/topics/
+
+- matplotlib at least version 0.9
+  Available at http://matplotlib.sourceforge.net/
+  
+- simplejson at least version 2.1.2
+  Available at http://pypi.python.org/pypi/simplejson/
+  
+- PHPSerialize (only if you use efp web service) at least version 1.0
+  Available at http://pypi.python.org/pypi/phpserialize
+  
+The eFP Browser was developed and tested using the MySQL database. If 
+you have an other database management system, you have to adapt the 
+source and integrate a different Python database library.
+
+- MySQL database, at least version 5.0
+  Available at http://www.mysql.com
+
+- MySQL-python (Python library for access MySQL databases), at least version 1.2.2
+  Available on http://sourceforge.net/projects/mysql-python
+
+- Apache web server
+  The eFP Browser is developed and tested under Apache. Any other web server
+  could also work, but is not tested yet!
+
+2. Installation
+
+The eFP Browser uses an extended version of the Python Image Library 1.1.6 (PIL),
+which is included in this package. You can either install this version regularly
+as described in the README file in the Imaging1.1.6efp directory.
+Otherwise you must build the package as described and afterwards copy the PIL 
+subdirectory into efp/cgi-bin at the end of the installation (see below).
+
+1. Copy efp folder to your Apache document directory (usually /var/www/html)
+
+2. Make the folder with files and subfolders readable by Apache:
+	$ chmod -r 775 efp
+
+3. Allow Apache to write into the subfolder output:
+	$ chmod 777 efp/cgi-bin/output
+
+4. Ensure that Apache allows cgi script execution in efp/cgi-bin.
+   Check the Apache configuration (see ScriptAlias, AddHandler cgi-script parameter)
+   If you change the Apache configuration you must restart the Apache web server.
+
+5. Build the extended PIL library and test it (for details see README under Imaging-1.1.6efp):
+	$ cd Imaging-1.1.6efp
+        $ python setup.py build_ext -i
+        $ python selftest.py
+
+6. Install the extended PIL (you probably need superuser/root permissions):
+	$ python setup.py install
+ 
+   If you do not want to install the Python Image Library regularly on the server, 
+   copy the created PIL subfolder of the Python Image Library into the efp/cgi-bin 
+   directory and ensure that Apache can read all files and execute the *.so files:
+	$ chmod -r 755 PIL
+
+In addition, you will need to provide and/or create the following files/databases:
+
+7. A lookup table or database describing which microarray elements map to 
+   which gene identifiers. For the table structure see the sample files (see below).
+   You can directly use these sample data files to upload into your database.
+
+8. A database of annotations and gene aliases if annotations are desired in the 
+   output (see sample data below).
+
+9. A database with the gene expression information.
+
+10. Optional: a database with ortholog data. If you don't want to use the ortholog functionality at all 
+    set the list of species for orthologs in efpConfig.py to () (see efpConfig.py).
+
+11. A MySQL database user 'db_user' with select permissions for the tables described above.
+    The username, password and database names have to be updated in efpConfig.py
+    You must have a MySQL account that has privileges to execute the following commands.
+
+    Login into Mysql, where username is your MySQL username
+	$ mysql -u <username> -p
+
+    Once in Mysql, execute the following SQL queries
+	mysql> use mysql
+	mysql> INSERT INTO user (host, user, password) VALUES ('localhost', 'db_user', PASSWORD('db_user'));
+	mysql> GRANT SELECT ON annotations_lookup.* TO db_user IDENTIFIED BY 'db_user';
+	mysql> GRANT SELECT ON atgenexp_plus.* TO db_user IDENTIFIED BY 'db_user';
+
+    For each gene expressions database: 
+	mysql> GRANT SELECT ON <genexpr_db>.* TO db_user IDENTIFIED BY 'db_user';
+
+    After doing all grands you have to activate the changes with
+	mysql> FLUSH PRIVILEGES;
+
+    If you choose different database names, user name or password, you have to change these
+    in the Python Module efpConfig.py
+
+12. An image upon which the expression data will be painted. The input image 
+   is of type Targa (.tga), which can be saved at 32 bit resolution with 
+   compression. The regions to be filled are coloured with colours that correspond 
+   to the colours in RGB hexadecimal format, (e.g. #FFCC99), that are specified 
+   in the XML control file.
+   We recommend using Photoshop to create this image and to colour the regions. 
+   Note that e.g. #FFCC99 is different from #FFCC98, even though your eye cannot 
+   tell these hues apart. When flood filling regions, turn off the anti-aliasing 
+   option, so that colours are not dithered at the edge where the fill meets the 
+   outline.
+
+13. A copy of this image in .png format - this is displayed if no user input 
+   is supplied.
+
+14. An XML file describing which samples are keyed by to which colour on the image, 
+    the image to use, the database containing the gene expression information and
+    so on. See the sample XML file which is included in this package.
+
+15. Copy the images and the XML file into the data subdirectory and ensure Apache
+    is allowed to read them.
+
+16. Optional: Configure request to web services for additional information about 
+    entered gene in data/efp_info.xml
+
+17. Update the configuration parameters according to your environment in efpConfig.py
+
+To access the eFP Browser point your web browser to 
+
+	http://yourdomain.edu/efp/cgi-bin/efpWeb.cgi
+
+To access the eFP web service use:
+        http://yourdomain.edu/efp/cgi-bin/efp_service.php
+
+Open http://yourdomain.edu/efp/cgi-bin/efp_service.php?html with your web browser to see
+the expected format of the JSON requests
+
+The output directory is cleaned up on a regular basis by the eFP Browser itself, 
+so no configuration of a cron job is necessary to remove older output image files. 
+
+------------------------------------------------------------------------------------
+Sample data
+------------------------------------------------------------------------------------
+
+In the data subfolder theres are two image files and an XML file for the 
+configuration as described above.
+
+On the project on sourceforge.net you can also find some sample data to be able to test 
+the correct setup of the eFP browser and to show the data structures.
+
+In the samples package you can find three SQL files with sample data for:
+
+	- annotations (agi_annotation.sql)
+	- mapping gene identifiers to microarray elements (at_agi_lookup.sql)
+	- gene expression data (sample_data.sql)
+
+To provide the data in a MySQL database as configured in the XML sample file create 
+two databases named annotations_lookup (for annotations and mapping data) 
+and atgenexp (for expression data).
+NOTE: for the creation of  databases and tables the user <db_user> needs CREATE 
+      and INSERT privileges in your MySQL database. You can use the database user "root".
+
+	$ mysql -u <db_user> -p
+	mysql> CREATE DATABASE annotations_lookup;
+	mysql> CREATE DATABASE atgenexp;
+
+Then exit mysql and load the data into the database:
+
+	$ mysql -u <db_user> -p annotations_lookup < agi_annotation.sql
+	$ mysql -u <db_user> -p annotations_lookup < at_agi_lookup.sql
+	$ mysql -u <db_user> -p atgenexp < sample_data.sql
+
+
+--------------------------------------------------------------------
+Troubleshooting
+--------------------------------------------------------------------
+
+- Check the configuration of database, db user and password in the file efpConfig.py
+- Check the permissions the db user has on the specified databases and tables
+- Make sure, that the user which runs Apache has execution rights on efpWeb.cgi and efp_service.php
+  chmod a+x efpWeb.cgi efp_service.php
+- Check the read permissions for the web server on the efp folder and its subfolders
+- Check the write permissions for the web server on the folder efp/cgi-bin/output
+- Check the web server logfile for error messages
+  For Apache you usually find this under /var/log/httpd/error_log or /var/log/apache2/error.log
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE info SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_info.dtd">
+<info>
+    <service name="Click to go to TAIR for further information about" type="blank">
+        <connect url=''></connect>
+        <icon filename="tair.gif"></icon>
+        <link url="http://www.arabidopsis.org/servlets/TairObject?type=locus&amp;name=GENE" />
+        <result_regex pattern='' />
+        <external webservice = 'true' />
+    </service>
+    <service name="Subcellular localisation" type="JSON">
+        <connect url='http://suba.plantenergy.uwa.edu.au/services/byAGI.php?agi=GENE.1'></connect>
+        <icon filename="subcellular_localisation.png"></icon>
+        <link url="http://www.bar.utoronto.ca/cell_efp/cgi-bin/cell_efp.cgi?primaryGene=GENE" ></link>
+        <noresult_regex pattern='.*"observed":\[\],"predicted":\[\]\}$' />
+    </service>
+</info>

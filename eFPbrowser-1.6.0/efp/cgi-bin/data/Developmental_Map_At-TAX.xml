@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="Tiling" class="View_dev" dbGroup="AtTAX" db="http://jsp.weigelworld.org/json?geneId=GENE_sampleId=SAMPLE_dataSet=dev" img="Developmental_Map_At-TAX_Tiling_image.tga">
+<coords graphX="5" graphY="290" graphWidth="64" graphHeight="65" legendX="6" legendY="386"/>
+<extra name="eFP Browser paper in PLoS One" link="http://dx.doi.org/10.1371/journal.pone.0000718" parameters="No" coords="383,2,383,33,741,33,741,2"/>
+<extra name="To Laubinger et al. reference" link="http://genomebiology.com/2008/9/7/R112" parameters="No" coords="460,51,460,69,734,69,734,51"/>
+
+<group name="CTRL_6">
+<control sample="DEV_CONTROL"/>
+<tissue colorKey="#CCCC99" name="Root, 7 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="308,382,314,381,310,395,284,439,290,403"/>
+<sample  name="D_001"/>
+</tissue>
+
+<tissue colorKey="#18FF00" name="Seedling, aerial parts, 7 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="341,334,349,352,342,364,316,354,316,383,306,383,306,355,278,362,272,350,281,342"/>
+<sample  name="D_002"/>
+</tissue>
+
+<tissue colorKey="#60F30F" name="Expanding leaf, #4 10 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="443,373,449,363,461,362,472,374,461,392,463,407,456,407,453,393"/>
+<sample  name="D_003"/>
+</tissue>
+
+<tissue colorKey="#999900" name="Senescing leaf, 35 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="621,342,639,371,640,404,625,421,608,391,610,356"/>
+<sample  name="D_004"/>
+</tissue>
+
+<tissue colorKey="#43E4F7" name="Stem, 2nd internode">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="114,204,121,203,122,329,115,329,110,288"/>
+<sample  name="D_005"/>
+</tissue>
+
+<tissue colorKey="#989789" name="Vegetative shoot meristem, 7 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="431,503,490,492,507,514,495,544,426,544,422,514"/>
+<sample  name="D_006"/>
+</tissue>
+
+<tissue colorKey="#979789" name="Inflorescence shoot meristem, 21 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="674,487,705,509,682,546,589,546,579,520,587,503"/>
+<sample  name="D_007"/>
+</tissue>
+
+<tissue colorKey="#E9FFFF" name="Whole inflorescence to floral stage 9, 21 days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="159,50,133,129,118,207,110,206,113,166,138,75"/>
+<sample  name="D_008"/>
+</tissue>
+
+
+<tissue colorKey="#FFFF00" name="Flower, stage 15, 21+ days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="405,168,534,159,529,197,476,276,451,272,415,230"/> 
+<sample name="D_009" /> 
+</tissue>
+
+<tissue colorKey="#C8FF00" name="Fruit, carpel stage 15, 21+ days">
+<link url="http://www.weigelworld.org/resources/microarray/at-tax"/>
+<area coords="609,220,639,218,641,239,610,239"/> 
+<sample name="D_010" /> 
+</tissue>
+
+</group>
+</view>
+
+
+
+
+<view name="ATH1" class="" dbGroup="AtTAX" db="atgenexp_plus" img="Developmental_Map_At-TAX_ATH1_image.tga">
+<coords graphX="5" graphY="290" graphWidth="64" graphHeight="87" legendX="6" legendY="386"/>
+
+<extra name="eFP Browser paper in PLoS One" link="http://dx.doi.org/10.1371/journal.pone.0000718" parameters="No" coords="383,2,383,33,741,33,741,2"/>
+
+
+<group name="CTRL_7">
+<control sample="ATGE_CTRL_7"/>
+
+<tissue colorKey="#18FF01" name="Cotyledon">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_1_"/> 
+<area coords="341,334,349,352,342,364,316,354,316,383,306,383,306,355,278,362,272,350,281,342"/>
+<sample  name="ATGE_1_A"/>
+<sample  name="ATGE_1_B"/>
+<sample  name="ATGE_1_C"/>
+</tissue>
+
+<tissue colorKey="#60F31F" name="Leaf 1 + 2">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_5_"/> 
+<area coords="443,373,449,363,461,362,472,374,461,392,463,407,456,407,453,393"/>
+<sample  name="ATGE_5_A"/>
+<sample  name="ATGE_5_B"/>
+<sample  name="ATGE_5_C"/>
+</tissue>
+
+
+
+<tissue colorKey="#5FEFFF" name="Stem, 2nd internode">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_27"/> 
+<area coords="114,204,121,203,122,329,115,329,110,288"/>
+<sample  name="ATGE_27_A"/>
+<sample  name="ATGE_27_B"/>
+<sample  name="ATGE_27_C"/>
+</tissue>
+
+<tissue colorKey="#989790" name="Shoot Apex, Vegetative">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_6_"/> 
+<area coords="431,503,490,492,507,514,495,544,426,544,422,514"/>
+<sample  name="ATGE_6_A"/>
+<sample  name="ATGE_6_B"/>
+<sample  name="ATGE_6_C"/>
+</tissue>
+
+<tissue colorKey="#989791" name="Shoot Apex, Inflorescence">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_29"/> 
+<area coords="674,487,705,509,682,546,589,546,579,520,587,503"/>
+<sample  name="ATGE_29_A2"/>
+<sample  name="ATGE_29_B2"/>
+<sample  name="ATGE_29_C2"/>
+</tissue>
+
+<tissue colorKey="#FFFF01" name="Flower, stage 15">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_39"/> 
+<area coords="405,168,534,159,529,197,476,276,451,272,415,230"/> 
+<sample  name="ATGE_39_A"/>
+<sample  name="ATGE_39_B"/>
+<sample  name="ATGE_39_C"/>
+</tissue>
+
+<tissue colorKey="#C8FF01" name="Flower Stage 15, Carpels">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_45"/> 
+<area coords="609,220,639,218,641,239,610,239"/> 
+<sample  name="ATGE_45_A"/>
+<sample  name="ATGE_45_B"/>
+<sample  name="ATGE_45_C"/>
+</tissue>
+
+<tissue colorKey="#CCCC98" name="Root, 7 days">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_9_"/> 
+<area coords="308,382,314,381,310,395,284,439,290,403"/>
+<sample  name="ATGE_9_A"/>
+<sample  name="ATGE_9_B"/>
+<sample  name="ATGE_9_C"/>
+</tissue>
+
+<tissue colorKey="#999901" name="Senescing leaf">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_25"/> 
+<area coords="621,342,639,371,640,404,625,421,608,391,610,356"/>
+<sample  name="ATGE_25_A"/>
+<sample  name="ATGE_25_B"/>
+<sample  name="ATGE_25_C"/>
+</tissue>
+
+</group>
+</view>
+
+
+</specimen>

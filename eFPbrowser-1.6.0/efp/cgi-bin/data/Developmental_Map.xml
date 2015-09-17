@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE specimen SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp" img="Developmental_Map_image.tga">
+<coords graphX="6" graphY="299" graphWidth="64" graphHeight="86" legendX="5" legendY="420"/>
+<extra name="eFP Browser paper in PLoS One" link="http://dx.doi.org/10.1371/journal.pone.0000718" parameters="No" coords="470,0,794,0,794,33,470,33"/>
+<extra name="To Embryo Development" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="479,146,515,146,515,170,479,170"/>
+<extra name="To Microgametogenesis" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="741,435,777,435,777,458,741,458"/>
+<extra name="To Root Cell Types" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="309,358,345,358,345,383,309,382"/>
+<extra name="To Xylem and Cork" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="195,258,230,258,230,282,195,282"/>
+<extra name="To Guard cell and Mesophyll" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="619,275,657,276,657,301,619,301"/>
+<extra name="To Stem Epidermis" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="111,269,148,269,148,295,111,295"/>
+<extra name="To Stigma and Ovary" link="efpWeb.cgi?dataSource=Tissue_Specific" parameters="Yes" coords="581,523,618,523,618,548,581,548"/>
+
+<group name="CTRL_7">
+<control sample="ATGE_CTRL_7"/>
+<tissue colorKey="#FF7700" name="Dry seed">
+<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=183"/>
+<area coords="232,357,254,357,254,384,232,384"/> 
+<sample name="RIKEN-NAKABAYASHI1A" /> 
+<sample name="RIKEN-NAKABAYASHI1B" />
+</tissue>
+<tissue colorKey="#EE7700" name="Imbibed seed, 24 h">
+<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=183"/>
+<area coords="188,310,211,311,211,336,188,336"/> 
+<sample name="RIKEN-NAKABAYASHI2A" /> 
+<sample name="RIKEN-NAKABAYASHI2B" />
+</tissue>
+<tissue colorKey="#00CCFF" name="1st Node">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_28"/> 
+<area coords="96,303,109,304,109,323,97,323"/>
+<sample  name="ATGE_28_A2"/>
+<sample  name="ATGE_28_B2"/>
+<sample  name="ATGE_28_C2"/>
+</tissue>
+<tissue colorKey="#CCFF64" name="Flower Stage 12, Stamens">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_36"/> 
+<area  coords="446,472,473,471,473,484,447,486"/>
+<area  coords="449,506,475,505,474,518,450,518"/>
+<area  coords="430,492,442,491,443,504,431,504"/>
+<area  coords="479,489,491,489,491,500,480,500"/>
+<sample  name="ATGE_36_A"/>
+<sample  name="ATGE_36_B"/>
+<sample  name="ATGE_36_C"/>
+</tissue>
+<tissue colorKey="#99CC65" name="Cauline Leaf">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_26"/> 
+<area  coords="46,352,64,314,86,305,97,313,96,323,67,349"/>
+<area  coords="109,204,124,201,147,218,147,243,128,240,108,211"/>
+<area  coords="700,316,728,314,732,387,702,387"/>
+<sample  name="ATGE_26_A"/>
+<sample  name="ATGE_26_B"/>
+<sample  name="ATGE_26_C"/>
+</tissue>
+<tissue colorKey="#99FF00" name="Cotyledon">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_1_"/> 
+<area  coords="152,218,231,216,231,238,208,239,194,228,187,227,170,238,151,237"/>
+<sample  name="ATGE_1_A"/>
+<sample  name="ATGE_1_B"/>
+<sample  name="ATGE_1_C"/>
+</tissue>
+<tissue colorKey="#CCCC97" name="Root">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_9_"/> 
+<area  coords="283,300,289,300,306,370,305,428,278,429,273,323"/>
+<sample  name="ATGE_9_A"/>
+<sample  name="ATGE_9_B"/>
+<sample  name="ATGE_9_C"/>
+</tissue>
+<tissue colorKey="#99CC66" name="Entire Rosette After Transition to Flowering">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_23"/> 
+<area coords="7,395,73,346,201,359,223,405,170,458,136,458,115,407,107,407,63,447,7,396"/>
+<sample  name="ATGE_23_A"/>
+<sample  name="ATGE_23_B"/>
+<sample  name="ATGE_23_C"/>
+</tissue>
+<tissue colorKey="#FFFFCC" name="Flower Stage 9">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_31"/> 
+<area  coords="177,471,223,465,228,545,184,547"/>
+<sample  name="ATGE_31_A2"/>
+<sample  name="ATGE_31_B2"/>
+<sample  name="ATGE_31_C2"/>
+</tissue>
+<tissue colorKey="#FFFF99" name="Flower Stage 10/11">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_32"/> 
+<area coords="234,460,341,455,342,548,237,548"/>
+<sample  name="ATGE_32_A2"/>
+<sample  name="ATGE_32_B2"/>
+<sample  name="ATGE_32_C2"/>
+</tissue>
+<tissue colorKey="#FFFF66" name="Flower Stage 12">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_33"/> 
+<area  coords="347,445,411,443,411,557,350,560"/>
+<sample  name="ATGE_33_A"/>
+<sample  name="ATGE_33_B"/>
+<sample  name="ATGE_33_C"/>
+</tissue>
+<tissue colorKey="#FFFF00" name="Flower Stage 15">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_39"/> 
+<area  coords="491,429,624,421,623,458,575,532,554,536,547,528,512,521"/>
+<sample  name="ATGE_39_A"/>
+<sample  name="ATGE_39_B"/>
+<sample  name="ATGE_39_C"/>
+</tissue>
+<tissue colorKey="#CCFF63" name="Flower Stage 12, Carpels">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_37"/> 
+<area  coords="448,490,472,489,472,502,449,502"/>
+<sample  name="ATGE_37_A"/>
+<sample  name="ATGE_37_B"/>
+<sample  name="ATGE_37_C"/>
+</tissue>
+<tissue colorKey="#CCFF65" name="Flower Stage 12, Petals">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_35"/> 
+<area  coords="433,470,452,460,457,464,446,473,437,487,433,487"/>
+<area  coords="462,463,481,463,487,469,489,484,481,487,478,474"/>
+<area  coords="483,504,489,504,488,518,479,528,468,526,478,515"/>
+<area  coords="436,508,445,517,460,525,452,529,438,524"/>
+<sample  name="ATGE_35_A"/>
+<sample  name="ATGE_35_B"/>
+<sample  name="ATGE_35_C"/>
+</tissue>
+<tissue colorKey="#CCFF66" name="Flower Stage 12, Sepals">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_34"/> 
+<area  coords="422,473,440,449,460,444,484,449,498,464,489,466,470,457,454,458,422,473"/>
+<area  coords="488,467,498,469,504,489,504,515,494,522,489,522,494,498"/>
+<area  coords="430,528,463,536,495,523,501,521,485,543,460,549,437,540,425,531"/>
+<area  coords="430,472,428,498,436,523,435,527,428,525,417,507,417,488,424,474"/>
+<sample  name="ATGE_34_A"/>
+<sample  name="ATGE_34_B"/>
+<sample  name="ATGE_34_C"/>
+</tissue>
+<tissue colorKey="#C8FF00" name="Flower Stage 15, Carpels">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_45"/> 
+<area  coords="652,484,684,485,685,506,653,505"/>
+<sample  name="ATGE_45_A"/>
+<sample  name="ATGE_45_B"/>
+<sample  name="ATGE_45_C"/>
+</tissue>
+<tissue colorKey="#CAFF00" name="Flower Stage 15, Petals">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_42"/> 
+<area  coords="632,485,636,468,646,458,658,453,664,457,647,470,640,484"/>
+<area  coords="676,452,687,451,697,458,703,471,702,481,695,482,691,468,677,458"/>
+<area  coords="695,506,705,505,704,516,697,529,683,537,678,536,677,532,687,523"/>
+<area  coords="634,508,643,508,648,521,662,531,664,536,657,538,648,535,638,525"/>
+<sample  name="ATGE_42_B"/>
+<sample  name="ATGE_42_C"/>
+<sample  name="ATGE_42_D"/>
+</tissue>
+<tissue colorKey="#CBFF00" name="Flower Stage 15, Sepals">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_41"/> 
+<area  coords="626,455,642,440,668,435,699,442,714,455,704,457,678,446,652,448,635,456"/>
+<area  coords="700,458,711,459,722,485,722,508,711,527,702,530,701,524,712,503,711,480"/>
+<area  coords="526,532,634,530,656,542,682,541,706,530,712,530,711,537,689,550,661,554,643,548"/>
+<area  coords="626,458,638,458,629,477,627,503,536,526,632,528,625,525,617,503,617,477"/>
+<sample  name="ATGE_41_A"/>
+<sample  name="ATGE_41_B"/>
+<sample  name="ATGE_41_C"/>
+</tissue>
+<tissue colorKey="#C9FF00" name="Flower Stage 15, Stamen">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_43"/> 
+<area  coords="654,466,684,465,685,478,654,478"/>
+<area  coords="692,486,707,485,707,501,693,501"/>
+<area  coords="652,512,680,512,680,523,654,523"/>
+<area  coords="632,488,646,488,646,504,631,504"/>
+<sample  name="ATGE_43_A"/>
+<sample  name="ATGE_43_B"/>
+<sample  name="ATGE_43_C"/>
+</tissue>
+<tissue colorKey="#CCFF00" name="Flowers Stage 15, Pedicels">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_40"/> 
+<area  coords="542,530,555,537,565,535,568,551,542,558"/>
+<sample  name="ATGE_40_A"/>
+<sample  name="ATGE_40_B"/>
+<sample  name="ATGE_40_C"/>
+</tissue>
+<tissue colorKey="#99FE00" name="Leaf 1 + 2">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_5_"/> 
+<area  coords="362,353,389,352,393,395,366,397"/>
+<sample  name="ATGE_5_A"/>
+<sample  name="ATGE_5_B"/>
+<sample  name="ATGE_5_C"/>
+</tissue>
+<tissue colorKey="#00CBFF" name="Leaf 7, Petiole">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_19"/> 
+<area  coords="533,364,561,361,565,403,530,405"/>
+<sample  name="ATGE_19_A"/>
+<sample  name="ATGE_19_B"/>
+<sample  name="ATGE_19_C"/>
+</tissue>
+<tissue colorKey="#64CC66" name="Leaf 7, Distal Half">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_21"/> 
+<area  coords="521,252,568,251,569,307,520,309"/>
+<sample  name="ATGE_21_A"/>
+<sample  name="ATGE_21_B"/>
+<sample  name="ATGE_21_C"/>
+</tissue>
+<tissue colorKey="#00CC66" name="Leaf 7, Proximal Half">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_20"/> 
+<area  coords="520,310,569,307,569,361,522,361"/>
+<sample  name="ATGE_20_A"/>
+<sample  name="ATGE_20_B"/>
+<sample  name="ATGE_20_C"/>
+</tissue>
+<tissue colorKey="#CCCC98" name="Hypocotyl">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_2_"/> 
+<area  coords="186,227,193,227,194,261,185,260"/>
+<sample  name="ATGE_2_A"/>
+<sample  name="ATGE_2_B"/>
+<sample  name="ATGE_2_C"/>
+</tissue>
+<tissue colorKey="#CCCC99" name="Root">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_3_"/> 
+<area  coords="182,260,196,263,169,321,156,317,165,277"/>
+<sample  name="ATGE_3_A"/>
+<sample  name="ATGE_3_B"/>
+<sample  name="ATGE_3_C"/>
+</tissue>
+<tissue colorKey="#99FF66" name="Rosette Leaf 2">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_12"/> 
+<area  coords="393,350,422,347,425,393,397,394"/>
+<sample  name="ATGE_12_A"/>
+<sample  name="ATGE_12_B"/>
+<sample  name="ATGE_12_C"/>
+</tissue>
+<tissue colorKey="#98FF66" name="Rosette Leaf 4">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_13"/> 
+<area  coords="426,320,464,321,467,393,431,395"/>
+<sample  name="ATGE_13_A"/>
+<sample  name="ATGE_13_B"/>
+<sample  name="ATGE_13_C"/>
+</tissue>
+<tissue colorKey="#66CC66" name="Rosette Leaf 6">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_14"/> 
+<area  coords="470,267,514,267,517,402,473,404"/>
+<sample  name="ATGE_14_A"/>
+<sample  name="ATGE_14_B"/>
+<sample  name="ATGE_14_C"/>
+</tissue>
+<tissue colorKey="#65CC66" name="Rosette Leaf 8">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_15"/> 
+<area  coords="573,266,615,267,618,401,573,401"/>
+<sample  name="ATGE_15_A"/>
+<sample  name="ATGE_15_B"/>
+<sample  name="ATGE_15_C"/>
+</tissue>
+<tissue colorKey="#669966" name="Rosette Leaf 10">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_16"/> 
+<area  coords="623,303,658,302,660,399,625,398"/>
+<sample  name="ATGE_16_A"/>
+<sample  name="ATGE_16_B"/>
+<sample  name="ATGE_16_C"/>
+</tissue>
+<tissue colorKey="#659966" name="Rosette Leaf 12">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_17"/> 
+<area  coords="663,307,691,307,695,394,664,396"/>
+<sample  name="ATGE_17_A"/>
+<sample  name="ATGE_17_B"/>
+<sample  name="ATGE_17_C"/>
+</tissue>
+<tissue colorKey="#999900" name="Senescing Leaf">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_25"/> 
+<area  coords="735,315,766,313,768,393,738,395"/>
+<sample  name="ATGE_25_A"/>
+<sample  name="ATGE_25_B"/>
+<sample  name="ATGE_25_C"/>
+</tissue>
+<tissue colorKey="#979999" name="Shoot Apex, Inflorescence">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_29"/> 
+<area  coords="235,40,357,16,373,76,240,89"/>
+<sample  name="ATGE_29_A2"/>
+<sample  name="ATGE_29_B2"/>
+<sample  name="ATGE_29_C2"/>
+</tissue>
+<tissue colorKey="#989999" name="Shoot Apex, Transition">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_8_"/> 
+<area  coords="234,96,341,81,347,137,232,145"/>
+<sample  name="ATGE_8_A"/>
+<sample  name="ATGE_8_B"/>
+<sample  name="ATGE_8_C"/>
+</tissue>
+<tissue colorKey="#969999" name="Shoot Apex, Vegetative">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_6_"/> 
+<area  coords="250,164,337,156,343,212,250,219"/>
+<sample  name="ATGE_6_A"/>
+<sample  name="ATGE_6_B"/>
+<sample  name="ATGE_6_C"/>
+</tissue>
+<tissue colorKey="#99CCFF" name="Stem, 2nd Internode">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_27"/> 
+<area  coords="97,212,109,213,109,304,96,303"/>
+<sample  name="ATGE_27_A"/>
+<sample  name="ATGE_27_B"/>
+<sample  name="ATGE_27_C"/>
+</tissue>
+<tissue colorKey="#FF0000" name="Mature Pollen">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_73"/> 
+<area  coords="734,464,777,463,775,519,735,520"/>
+<sample  name="ATGE_73_A"/>
+<sample  name="ATGE_73_B"/>
+<sample  name="ATGE_73_C"/>
+</tissue>
+<tissue colorKey="#FFCC99" name="Seeds Stage 3 w/ Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_76"/> 
+<area  coords="387,80,421,79,425,224,386,223"/>
+<sample  name="ATGE_76_A"/>
+<sample  name="ATGE_76_B"/>
+<sample  name="ATGE_76_C"/>
+</tissue>
+<tissue colorKey="#FFCC98" name="Seeds Stage 4 w/ Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_77"/> 
+<area  coords="142,59,167,41,174,48,144,73"/>
+<area  coords="427,59,462,60,465,222,430,222"/>
+<sample  name="ATGE_77_D"/>
+<sample  name="ATGE_77_E"/>
+<sample  name="ATGE_77_F"/>
+</tissue>
+<tissue colorKey="#FFCC97" name="Seeds Stage 5 w/ Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_78"/> 
+<area  coords="99,42,113,37,123,74,111,83"/>
+<area  coords="469,49,505,50,507,224,470,227"/>
+<sample  name="ATGE_78_D"/>
+<sample  name="ATGE_78_E"/>
+<sample  name="ATGE_78_F"/>
+</tissue>
+<tissue colorKey="#FFCC00" name="Seeds Stage 6 w/o Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_79"/> 
+<area  coords="515,169,558,164,559,220,515,223"/>
+<sample  name="ATGE_79_A"/>
+<sample  name="ATGE_79_B"/>
+<sample  name="ATGE_79_C"/>
+</tissue>
+<tissue colorKey="#FECC00" name="Seeds Stage 7 w/o Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_81"/> 
+<area  coords="569,167,606,167,607,222,570,221"/>
+<sample  name="ATGE_81_A"/>
+<sample  name="ATGE_81_B"/>
+<sample  name="ATGE_81_C"/>
+</tissue>
+<tissue colorKey="#FDCC00" name="Seeds Stage 8 w/o Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_82"/> 
+<area  coords="610,177,652,176,654,224,613,228"/>
+<sample  name="ATGE_82_A"/>
+<sample  name="ATGE_82_B"/>
+<sample  name="ATGE_82_C"/>
+</tissue>
+<tissue colorKey="#FF9900" name="Seeds Stage 9 w/o Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_83"/> 
+<area  coords="663,166,710,165,711,231,663,232"/>
+<sample  name="ATGE_83_A"/>
+<sample  name="ATGE_83_B"/>
+<sample  name="ATGE_83_C"/>
+</tissue>
+<tissue colorKey="#FE9900" name="Seeds Stage 10 w/o Siliques">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_84"/> 
+<area  coords="720,167,767,168,768,230,721,231"/>
+<sample  name="ATGE_84_A"/>
+<sample  name="ATGE_84_B"/>
+<sample  name="ATGE_84_D"/>
+</tissue>
+<tissue colorKey="#99CC64" name="Vegetative Rosette">
+<link url="http://affymetrix.arabidopsis.info/narrays/search.pl?f1=1&amp;s1=ATGE_89"/> 
+<area  coords="218,259,363,259,362,331,303,331,289,299,283,299,259,330,216,330"/>
+<sample  name="ATGE_89_A"/>
+<sample  name="ATGE_89_B"/>
+<sample  name="ATGE_89_C"/>
+</tissue>
+</group>
+</view>
+</specimen>
