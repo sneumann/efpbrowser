@@ -74,3 +74,35 @@ sudo chmod -R g+w /var/www/html/efp/cgi-bin/output
 mkdir -p /var/www/html/efp/cgi-bin
 
 
+## Might also require 
+## apt-get install -y mafft
+
+## And mview (which package ?!)
+
+
+## 
+## MySQL setup 
+## 
+
+# install mysql 
+# ATTENTION: CUSTOMISE THE MYSQL PASSWORD FOR YOUR OWN INSTALLATION !!!
+debconf-set-selections <<< 'mysql-server mysql-server/root_password password efp@2014'
+debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password efp@2014'
+
+apt-get install -y mysql-server mysql-client
+
+cat >~/.my.cnf <<EOF
+[client]
+user=root
+password="efp@2014"
+
+[mysql]
+user=root
+password="efp@2014"
+EOF
+
+mysql --user=root  < efpdata.sql
+
+
+
+
