@@ -33,8 +33,6 @@ apt-get install -y lynx
 git clone https://github.com/sneumann/efpbrowser
 
 cat >/etc/apache2/sites-available/efp.conf <<EOF
-ScriptAlias "/efp/cgi-bin/" "/var/www/html/efp/cgi-bin/"
-
 <Directory "/var/www/html/efp/cgi-bin">
   Options +ExecCGI
   AddHandler cgi-script .cgi .pl

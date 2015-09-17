@@ -220,7 +220,7 @@ print '<body><form action="efpWeb.cgi" name="efpForm" method="POST" onSubmit="re
 print '<table width="788" border="0" align="center" cellspacing="1" cellpadding="0">'
 
 print '<tr><td>'
-print "<h1 style='vertical-align:middle;'><a href='http://bar.utoronto.ca'><img src='http://bar.utoronto.ca/bbc_logo_small.gif' alt='To the Bio-Array Resource Homepage' border=0 align=absmiddle></a>&nbsp;<img src='http://bar.utoronto.ca/bar_logo.gif' alt='The Bio-Array Resource' border=0 align=absmiddle>&nbsp;<img src='http://bar.utoronto.ca/efp/eFP_logo_large.png' align=absmiddle border=0>&nbsp;%s eFP Browser" % efpConfig.spec_names[efpConfig.species]
+print "<h1 style='vertical-align:middle;'><a href='http://bar.utoronto.ca'><img src='http://bar.utoronto.ca/bbc_logo_small.gif' alt='To the Bio-Array Resource Homepage' border=0 align=absmiddle></a>&nbsp;<img src='http://bar.utoronto.ca/bar_logo.gif' alt='The Bio-Array Resource' border=0 align=absmiddle>&nbsp;<img src='/efp/eFP_logo_large.png' align=absmiddle border=0>&nbsp;%s eFP Browser" % efpConfig.spec_names[efpConfig.species]
 print "<br><img src='http://bar.utoronto.ca/images/green_line.gif' width=98%% alt='' height='6px' border=0></h1>"
 
 print '</td></tr>'
