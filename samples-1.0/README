@@ -1,0 +1,33 @@
+------------------------------------------------------------------------------------
+Sample data for eFP Browser
+------------------------------------------------------------------------------------
+
+This package includes sample data for the eFP Browser which can be downloaded from
+	http://efpbrowser.sourceforge.net
+
+This can be used to test the correct setup of the eFP browser and to understand the 
+data structures used by the eFP Browser..
+
+In this package you can find three SQL files with sample data for:
+
+	- annotations (agi_annotation.sql)
+        - mapping gene identifiers to microarray elements (at_agi_lookup.sql)
+        - gene expression data (sample_data.sql)
+
+To provide the data in a MySQL database as configured in the XML sample file create
+two databases named annotations_lookup (for annotations and mapping data)
+and atgenexp (for expression data).
+NOTE: for the creation of databases and tables the user <db_user> needs CREATE
+      and INSERT privileges in your MySQL database.
+
+	$ mysql -u <db_user> -p
+	mysql> CREATE DATABASE annotations_lookup;
+	mysql> CREATE DATABASE atgenexp;
+
+Then exit mysql and load the data into the database:
+
+        $ mysql -u <db_user> -p annotations_lookup < agi_annotation.sql
+        $ mysql -u <db_user> -p annotations_lookup < at_agi_lookup.sql
+        $ mysql -u <db_user> -p atgenexp < sample_data.sql
+
+
