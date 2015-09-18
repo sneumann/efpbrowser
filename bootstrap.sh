@@ -48,7 +48,22 @@ service apache2 restart
 
 cd efpbrowser
 
-apt-get install -y python-imaging python-lxml python-mysqldb python-matplotlib
+# efpBrowser requires patched PIL not in Ubuntu
+# apt-get install -y python-imaging python-lxml python-mysqldb python-matplotlib
+
+apt-get install -y python-lxml python-mysqldb python-matplotlib
+apt-get install -y python-pip 
+apt-get build-dep -y python-imaging
+apt-get install -y libjpeg62 libjpeg62-dev libfreetype6-dev
+
+## From: http://askubuntu.com/questions/156484/how-do-i-install-python-imaging-library-pil
+sudo ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/libz.so
+sudo ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/libjpeg.so
+sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/libfreetype.so
+sudo ln -s /usr/include/freetype2 /usr/local/include/freetype
+
+pip install /home/vagrant/efpbrowser/eFPbrowser-1.6.0/Imaging-1.1.6efp/
+
 
 ## Under efp create a cgi-bin directory. The contents of the zipped file 
 ## you receive are installed here. These files must be readable and executable 
@@ -101,8 +116,34 @@ user=root
 password="efp@2014"
 EOF
 
-mysql --user=root  < efpdata.sql
 
+cat >/var/www/.my.cnf <<EOF
+[client]
+user=efpro
+password="efp@2015"
 
+[mysql]
+user=efpro
+password="efp@2015"
+EOF
 
+mysql --user=root <<EOF
+CREATE DATABASE annotations_lookup;
+CREATE DATABASE atgenexp;
+EOF
 
+cd samples-1.0
+bzcat agi_annotation.sql.bz2 | mysql -u root annotations_lookup
+bzcat at_agi_lookup.sql.bz2 | mysql -u root annotations_lookup
+bzcat sample_data.sql.bz2 | mysql -u root atgenexp
+cd ..
+
+mysql --user=root <<EOF
+CREATE USER 'efpro'@'localhost' IDENTIFIED BY 'efp@2015';
+
+use annotations_lookup;
+GRANT SELECT ON *.* TO 'efpro'@'localhost';
+
+use atgenexp;
+GRANT SELECT ON *.* TO 'efpro'@'localhost';
+EOF

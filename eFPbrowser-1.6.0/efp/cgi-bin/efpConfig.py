@@ -5,8 +5,8 @@ Created on Nov 24, 2009
 '''
 
 DB_HOST = 'localhost'           # hostname of MySQL database server
-DB_USER = 'db_user'            # username for database access
-DB_PASSWD = 'db_user'          # password for database access
+DB_USER = 'efpro'            # username for database access
+DB_PASSWD = 'efp@2015'          # password for database access
 DB_ANNO = 'annotations_lookup'  # database name for annotations lookup
 
 # lookup table for gene annotation
