@@ -1,4 +1,4 @@
-# install a MassBank Dev machine
+# install an EFP Browser Dev machine
 export DEBIAN_FRONTEND=noninteractive
 
 # Freshen package index
